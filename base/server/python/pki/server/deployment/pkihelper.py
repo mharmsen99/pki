@@ -255,6 +255,10 @@ class Identity:
         else:
             return True
 
+    def hello_world(self):
+        print("Hello World!")
+        return
+
     def is_user_a_member_of_group(self, pki_user, pki_group):
         if self.group_exists(pki_group) and self.user_exists(pki_user):
             # Check to see if pki_user is a member of this pki_group
